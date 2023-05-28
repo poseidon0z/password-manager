@@ -1,0 +1,5 @@
+{
+  "user": <ID>,
+  "pass": <pass for vtop, lms>,
+  "epass": <pass for events site>
+}

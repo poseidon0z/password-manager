@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "vfill",
+  "version": "0.1",
+
+  "description": "Autofill for vit sites",
+
+  "icons": {
+    "48": "icons/vfill.svg",
+    "96": "icons/vfill.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://vtopcc.vit.ac.in/vtop/login",
+        "https://lms.vit.ac.in/login/index.php"
+      ],
+      "js": ["vfill.js"]
+    },
+    {
+      "matches": ["https://vitchennaievents.com/conf1/login/"],
+      "js": ["vevents.js"]
+    }
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "extension@xScruffers.github.com"
+    }
+  }
+}
